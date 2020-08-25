@@ -1,0 +1,6 @@
+- const path = "./img/svg/symbol/sprite.svg#";
+
+mixin sprite(name, id)
+  svg(class=name)
+    use(xlink:href=path + id)
+
