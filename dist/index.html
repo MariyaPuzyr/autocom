@@ -9,7 +9,87 @@
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
-    <main></main>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-menu"><a class="navbar-brand" href="#"><img src="/img/svg/autocom_logo.svg">Автоком сервіс</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="d-flex flex-column w-100 align-items-end">
+        <ul class="navbar-nav phone-list">
+          <li><a href="#">(0462) 72-22-02</a></li>
+          <li><a href="#">(050) 44-23-664</a></li>
+          <li><a href="#">(063) 49-72-241</a></li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+            <li class="nav-item"><a class="nav-link" href="#auto-parts">Автозапчастини</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Відгуки</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="autocom-video">
+        <video autoplay="" muted="" loop="" poster="/img/bg-head.jpg">
+          <source src="img/video.mp4" type="video/mp4">
+        </video>
+        <div class="container-xl"><img class="autocom-logo" src="/img/svg/autocom-logo.svg">
+          <h1>Автоком сервіс</h1>
+          <h5>Ремонт легкових і вантажних авто, діагностика, фарбування та мийка, а також продаж запчастин, витратних матеріалів, технічних рідин та шин</h5><a class="autocom-get-watch-video" href="#">переглянути відео</a>
+        </div>
+        <!--video(poster='/img/bg-head.jpg' src='/img/video.mp4' playsinline='' muted='' loop='' preload='none')-->
+      </section>
+      <section class="car-service">
+        <div class="container-xl">
+          <h2 class="car-service__title">Авторизований сервісний центр</h2>
+          <div class="car-service__items">
+            <div class="car-service__item"><img src="/img/svg/logo-isuzutruck.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-man.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-bogdan.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-hyundai.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-kraz.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-ataman.svg"></div>
+            <div class="car-service__item"><img src="/img/svg/logo-varv.svg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="all-services" id="all-services">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/service.svg">
+                <div class="all-services__item--title">Cервіс</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/diagnostic.svg">
+                <div class="all-services__item--title">Діагностика</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/inspection.svg">
+                <div class="all-services__item--title">Техогляд</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/tire.svg">
+                <div class="all-services__item--title">Шиномонтаж, шиноремонт</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/car-parts.svg">
+                <div class="all-services__item--title">Замовлення запчастин</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="all-services__item text-center"><img src="/img/svg/car-wash.svg">
+                <div class="all-services__item--title">Автомийка</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

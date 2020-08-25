@@ -2,7 +2,7 @@ const imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
     imgCompress = require('imagemin-jpeg-recompress'),
     imgPATH = {
-      "input": ["./src/img/**/*.{png,jpg,gif,svg}",
+      "input": ["./src/img/**/*.{png,jpg,gif,svg,mp4}",
         './src/img/svg/*'],
       "output": "./dist/img/"
     };
