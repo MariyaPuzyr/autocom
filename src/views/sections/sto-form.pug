@@ -11,7 +11,7 @@ section.sto-form
             .row
               .col-md-6
                 .sto-form__item--group
-                  .sto-form__item--car-model Марка машини
+                  .sto-form__item--car-model.form-control Марка машини
                   .sto-form__item--dropdown
                     .ui-widget
                       select#combobox
@@ -35,4 +35,24 @@ section.sto-form
                   input#light-version-examples.form-control(type='text' placeholder='Select time')
                   label(for='light-version-examples') Light version, 12hours
                   i.fas.fa-envelope.input-prefix
-
+          .row
+            .col-md-6
+              .form-group
+                input(type='text' placeholder='VIN код' value='yv2a4b2a0wa280909').form-control
+            .col-md-6
+              .form-group.error
+                input(type='text' value="Ім'я клієнта").form-control
+                .invalid-feedback Помилка
+          .row
+            .col-md-6
+              .form-group
+                input(type='text' placeholder='Держномер').form-control
+            .col-md-6
+              .form-group
+                input(type='phone' placeholder='+380 (__) ___-__-__').form-control
+          .row
+            .col-md-12
+              textarea.form-control(rows='5') Опис несправності
+          .row
+            .col-md-4.m-auto
+              button(type='submit').get-sign-up Записатися

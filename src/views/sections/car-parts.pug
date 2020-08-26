@@ -1,0 +1,46 @@
+section.car-parts
+  .container-xl
+    .row
+      .col-md-7
+        .car-parts__item
+          h3.car-parts__item--title Автозапчастини
+          p Для Вашої зручності, а також у зв'язку з підвищеним попитом на автозапчастини, на території нашого автосервісу працює магазин автозапчастин для вантажних і легкових автомобілів європейського виробництва
+            br
+            | Найбільш ходові запчастини та комплектуючі є в наявності. Співробітники сервісного центру допоможуть підібрати деталі і аксесуари для вашого авто і запропонують варіанти.
+            br
+            | Звертаємо Вашу увагу, що для уточнення позначення запчастини або агрегату необхідно вказувати VIN - номер Вашого автомобіля.
+  .car-parts__search
+    .container-xl
+      .row
+        .col-md-12
+          h5 Пошук автозапчастин
+      .row
+        .col-md-3
+          .sto-form__item--group
+            .sto-form__item--car-model.form-control Марка машини
+            .sto-form__item--dropdown
+              .ui-widget
+                select#combobox
+                  option(value='') Select one...
+                  option(value='Renault') Renault
+                  option(value='Geely') Geely
+                  option(value='Volkswagen') Volkswagen
+                  option(value='Skoda') Skoda
+                  option(value='Citroen') Citroen
+                  option(value='Audi') Audi
+                  option(value='BMW') BMW
+                  option(value='Chevrolet') Chevrolet
+                  option(value='Daewoo') Daewoo
+          .form-group
+            input(type='text' placeholder='VIN код' value='yv2a4b2a0wa280909').form-control
+        .col-md-3
+          .form-group
+            input(type='text' value="Ім'я клієнта").form-control
+          .form-group
+            input(type='phone' placeholder='+380 (__) ___-__-__').form-control
+        .col-md-4
+          textarea.form-control(rows='5') Опис несправності
+        .col-md-2
+          button(type='submit').get-sign-up
+            img(src='/img/svg/search-b.svg')
+            | Замовити
