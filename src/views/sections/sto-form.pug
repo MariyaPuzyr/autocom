@@ -1,0 +1,38 @@
+section.sto-form
+  .container-xl
+    .row
+      .col-md-3
+        img(src='img/svg/car-tir-trick.svg').sto-form__img
+        p.sto-form__description Компанія зарекомендувала себе як надійний і професійний постачальник послуг в сфері ремонту та технічного обслуговування вантажних і легкових автомобілів.
+      .col-md-9
+        .sto-form__item
+          h3.sto-form__item--title Записатися на СТО
+          form(action='#')
+            .row
+              .col-md-6
+                .sto-form__item--group
+                  .sto-form__item--car-model Марка машини
+                  .sto-form__item--dropdown
+                    .ui-widget
+                      select#combobox
+                        option(value='') Select one...
+                        option(value='Renault') Renault
+                        option(value='Geely') Geely
+                        option(value='Volkswagen') Volkswagen
+                        option(value='Skoda') Skoda
+                        option(value='Citroen') Citroen
+                        option(value='Audi') Audi
+                        option(value='BMW') BMW
+                        option(value='Chevrolet') Chevrolet
+                        option(value='Daewoo') Daewoo
+              .col-md-3
+                .input-group.date
+                  input.form-control(type='text' value='12-02-2012')
+                  .input-group-addon
+                    span.glyphicon.glyphicon-th
+              .col-md-3
+                .md-form.md-outline.input-with-post-icon.timepicker(twelvehour='true')
+                  input#light-version-examples.form-control(type='text' placeholder='Select time')
+                  label(for='light-version-examples') Light version, 12hours
+                  i.fas.fa-envelope.input-prefix
+
