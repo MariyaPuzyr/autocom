@@ -36,4 +36,4 @@ $.gulp.task('dev', $.gulp.series(
     )
 ));
 
-$.gulp.task('default', $.gulp.series('dev', 'watch', 'serve-new'));
+$.gulp.task('default', $.gulp.series('serve-new', 'dev', 'watch'));
