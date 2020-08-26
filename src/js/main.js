@@ -160,4 +160,6 @@ $(document).ready(function () {
     $("#combobox").combobox();
 
   });
+
+  $('.single-item').slick();
 });
