@@ -1,26 +1,29 @@
 nav.navbar.navbar-expand-lg.fixed-top.navbar-menu
-  a.navbar-brand(href='#')
-    img(src='/img/svg/autocom_logo.svg')
-    | Автоком сервіс
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  .d-flex.flex-column.w-100.align-items-end
-    ul.navbar-nav.phone-list
-      li
-        a(href='#') (0462) 72-22-02
-      li
-        a(href='#') (050) 44-23-664
-      li
-        a(href='#') (063) 49-72-241
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav
-        li.nav-item
-          a.nav-link(href='#services') Послуги
-        li.nav-item
-          a.nav-link(href='#auto-parts') Автозапчастини
-        li.nav-item
-          a.nav-link(href='#about') Про нас
-        li.nav-item
-          a.nav-link(href='#reviews') Відгуки
-        li.nav-item
-          a.nav-link(href='#contacts') Контакти
+  .container-xl
+    a.navbar-brand(href='#')
+      img(src='/img/svg/autocom_logo.svg')
+      | Автоком
+      br
+      | сервіс
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-expanded='false')
+      span.navbar-toggler-icon
+    .d-flex.flex-column.w-100.align-items-end
+      ul.navbar-nav.phone-list
+        li
+          a(href='#') (0462) 72-22-02
+        li
+          a(href='#') (050) 44-23-664
+        li
+          a(href='#') (063) 49-72-241
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.main-menu
+          li.nav-item
+            a.nav-link(href='#services') Послуги
+          li.nav-item
+            a.nav-link(href='#auto-parts') Автозапчастини
+          li.nav-item
+            a.nav-link(href='#about') Про нас
+          li.nav-item
+            a.nav-link(href='#reviews') Відгуки
+          li.nav-item
+            a.nav-link(href='#contacts') Контакти

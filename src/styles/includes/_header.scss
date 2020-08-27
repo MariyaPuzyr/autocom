@@ -1,0 +1,42 @@
+.navbar-menu {
+  padding: 0 30px 25px;
+  transition: .3s;
+  &.fixed {
+    background: #0A0F1A;
+  }
+  .navbar-brand {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    img {
+      width: 65px;
+      height: 65px;
+      margin-right: 9px;
+    }
+  }
+  .phone-list {
+    margin-bottom: 20px;
+    a {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 40px;
+      font-weight: 500;
+    }
+  }
+  .main-menu {
+    .nav-link {
+      color: #FDD417;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      margin-left: 50px;
+      padding: 0;
+    }
+  }
+}
