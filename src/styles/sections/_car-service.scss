@@ -1,0 +1,20 @@
+.car-service {
+  background: #0A0F1A;
+  padding-bottom: 40px;
+  &__title {
+    color: #FDD417;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    padding-top: 25px;
+    text-align: center;
+  }
+  &__item {
+    &s {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+  }
+}
