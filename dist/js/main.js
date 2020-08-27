@@ -1699,6 +1699,20 @@
     }
   });
 }(document, jQuery);
+$(document).scroll(function () {
+  navbarScroll();
+});
+
+function navbarScroll() {
+  var y = window.scrollY;
+
+  if (y > 10) {
+    $('.navbar-menu').addClass('fixed');
+  } else if (y < 10) {
+    $('.navbar-menu').removeClass('fixed');
+  }
+}
+
 $(document).ready(function () {
   /* move to section */
   $('.nav-link').click(function (event) {
