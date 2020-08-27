@@ -1,0 +1,109 @@
+.services {
+  background: #EFEFEF;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  &-main-list {
+    display: flex;
+    margin-bottom: 50px;
+    img {
+      margin-right: 30px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #0A0F1A;
+    }
+    &__title {
+      font-weight: 300;
+      font-size: 42px;
+      line-height: 51px;
+      color: #0A0F1A;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      &::after {
+        content: '';
+        width: 100%;
+        height: 6px;
+        background: #FDD417;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    &__description {
+      font-size: 18px;
+      line-height: 22px;
+      color: #0A0F1A;
+      margin: 0;
+    }
+  }
+  &-full-list {
+    margin-top: 75px;
+  }
+  &-item {
+    text-align: center;
+    &__img {
+      position: relative;
+      background: url('../img/svg/services-item-bg.svg');
+      width: 160px;
+      height: 172px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::after {
+        content: '';
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        bottom: 3px;
+        background: #FDD417 url('../img/svg/icon-view.svg') no-repeat center;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #0A0F1A;
+      margin-top: 20px;
+    }
+  }
+  &-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0A0F1A;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      padding-left: 36px;
+      margin-bottom: 10px;
+      &::before {
+        content: '';
+        width: 26px;
+        height: 1px;
+        background: #0A0F1A;
+        flex: 0 0 auto;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+    &-item--title {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #0A0F1A;
+      margin-bottom: 10px;
+    }
+  }
+}
