@@ -1,10 +1,10 @@
 section.sto-form
   .container-xl
     .row
-      .col-md-3
-        img(src='img/svg/car-tir-trick.svg').sto-form__img
+      .col-md-4
+        img(src='img/svg/car-tir-trick.svg').sto-form__img.img-fluid
         p.sto-form__description Компанія зарекомендувала себе як надійний і професійний постачальник послуг в сфері ремонту та технічного обслуговування вантажних і легкових автомобілів.
-      .col-md-9
+      .col-md-8
         .sto-form__item
           h3.sto-form__item--title Записатися на СТО
           form(action='#')
@@ -27,14 +27,13 @@ section.sto-form
                         option(value='Daewoo') Daewoo
               .col-md-3
                 .input-group.date
-                  input.form-control(type='text' value='12-02-2012')
+                  input.form-control(type='text' placeholder='Дата')
                   .input-group-addon
-                    span.glyphicon.glyphicon-th
+                    +sprite('icon', 'icon-date')
               .col-md-3
-                .md-form.md-outline.input-with-post-icon.timepicker(twelvehour='true')
-                  input#light-version-examples.form-control(type='text' placeholder='Select time')
-                  label(for='light-version-examples') Light version, 12hours
-                  i.fas.fa-envelope.input-prefix
+                .md-form.md-outline.input-group-addon.input-with-post-icon.timepicker(twelvehour='true')
+                  input#light-version-examples.form-control(type='text' placeholder='Час')
+                  +sprite('icon', 'icon-timer')
           .row
             .col-md-6
               .form-group
@@ -52,7 +51,7 @@ section.sto-form
                 input(type='phone' placeholder='+380 (__) ___-__-__').form-control
           .row
             .col-md-12
-              textarea.form-control(rows='5') Опис несправності
+              textarea.form-control(rows='5' placeholder='Опис несправності')
           .row
-            .col-md-4.m-auto
+            .col-md-6.m-auto
               button(type='submit').get-sign-up Записатися

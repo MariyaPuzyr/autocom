@@ -99,10 +99,10 @@
       <section class="sto-form">
         <div class="container-xl">
           <div class="row">
-            <div class="col-md-3"><img class="sto-form__img" src="img/svg/car-tir-trick.svg">
+            <div class="col-md-4"><img class="sto-form__img img-fluid" src="img/svg/car-tir-trick.svg">
               <p class="sto-form__description">Компанія зарекомендувала себе як надійний і професійний постачальник послуг в сфері ремонту та технічного обслуговування вантажних і легкових автомобілів.</p>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
               <div class="sto-form__item">
                 <h3 class="sto-form__item--title">Записатися на СТО</h3>
                 <form action="#">
@@ -130,14 +130,20 @@
                     </div>
                     <div class="col-md-3">
                       <div class="input-group date">
-                        <input class="form-control" type="text" value="12-02-2012">
-                        <div class="input-group-addon"><span class="glyphicon glyphicon-th"></span></div>
+                        <input class="form-control" type="text" placeholder="Дата">
+                        <div class="input-group-addon">
+                          <svg class="icon">
+                            <use xlink:href="./img/svg/symbol/sprite.svg#icon-date"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="md-form md-outline input-with-post-icon timepicker" twelvehour="true">
-                        <input class="form-control" id="light-version-examples" type="text" placeholder="Select time">
-                        <label for="light-version-examples">Light version, 12hours</label><i class="fas fa-envelope input-prefix"></i>
+                      <div class="md-form md-outline input-group-addon input-with-post-icon timepicker" twelvehour="true">
+                        <input class="form-control" id="light-version-examples" type="text" placeholder="Час">
+                        <svg class="icon">
+                          <use xlink:href="./img/svg/symbol/sprite.svg#icon-timer"></use>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -169,11 +175,11 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <textarea class="form-control" rows="5">Опис несправності</textarea>
+                    <textarea class="form-control" rows="5" placeholder="Опис несправності"></textarea>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4 m-auto">
+                  <div class="col-md-6 m-auto">
                     <button class="get-sign-up" type="submit">Записатися</button>
                   </div>
                 </div>
