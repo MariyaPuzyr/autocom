@@ -1,0 +1,41 @@
+.contact-us {
+  background: #0A0F1A;
+  padding-top: 30px;
+  color: #ffffff;
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &--info {
+      margin-left: 20px;
+    }
+    &--title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+    .map {
+      text-transform: uppercase;
+      border: 1px solid #FDD417;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 5px 15px;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 5px;
+      transition: .3s;
+      &:hover {
+        background: #fdd417;
+        color: #0a0f1a;
+      }
+    }
+  }
+}
