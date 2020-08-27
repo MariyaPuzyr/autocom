@@ -2,9 +2,10 @@ section.autocom-video
   video(autoplay='' muted='' loop='' poster='/img/bg-head.jpg')
     source(src='img/video.mp4' type='video/mp4')
   .container-xl
-    img(src='/img/svg/autocom_logo.svg').autocom-logo
-    h1 Автоком сервіс
-    h5 Ремонт легкових і вантажних авто, діагностика, фарбування та мийка, а також продаж запчастин, витратних матеріалів, технічних рідин та шин
-    a(href='#').autocom-get-watch-video переглянути відео
-
-  //video(poster='/img/bg-head.jpg' src='/img/video.mp4' playsinline='' muted='' loop='' preload='none')
+    .autocom-video__info
+      img(src='/img/svg/autocom_logo.svg').autocom-logo
+      h1 Автоком сервіс
+      h5 Ремонт легкових і вантажних авто, діагностика, фарбування та мийка, а також продаж запчастин, витратних матеріалів, технічних рідин та шин
+      .row
+        .col-md-4.m-auto
+          a(href='#').autocom-get-watch-video переглянути відео
