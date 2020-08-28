@@ -33,52 +33,54 @@
       position: relative;
       z-index: 3;
     }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-control {
-      height: 48px;
-      border-radius: 5px;
-      padding: 15px;
-      color: #343435;
-      font-size: 16px;
-      line-height: 19px;
-      border: 2px solid transparent;
-      &:focus {
-        border: 2px solid #FDD417;
-        outline: none;
-        box-shadow: none;
-      }
-      &::placeholder {
-        color: #828289;
-      }
-    }
-    textarea.form-control {
-      height: 120px;
-      resize: none;
-      margin-bottom: 30px;
-    }
-    .get-sign-up {
-      width: 100%;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      color: #0A0F1A;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      background: #FDD417;
-      border-radius: 5px;
-      padding: 13px 20px;
-      border: 1px solid #FDD417;
-      transition: .3s;
-      &:hover {
-        background: #ffffff;
-      }
-    }
   }
 }
-
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  height: 48px;
+  border-radius: 5px;
+  padding: 15px;
+  color: #343435;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid transparent;
+  &:focus {
+    border: 2px solid #FDD417;
+    outline: none;
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #828289;
+  }
+}
+textarea.form-control {
+  height: 115px;
+  resize: none;
+  margin-bottom: 30px;
+}
+.get-sign-up {
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  color: #0A0F1A;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background: #FDD417;
+  border-radius: 5px;
+  padding: 13px 20px;
+  border: 1px solid #FDD417;
+  transition: .3s;
+  &:hover {
+    background: #ffffff;
+  }
+  &:focus {
+    outline: none;
+  }
+}
 .custom-combobox {
   position: relative;
   display: inline-block;
