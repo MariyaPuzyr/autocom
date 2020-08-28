@@ -1,0 +1,20 @@
+.gallery {
+  &-item {
+    flex: 0 0 25%;
+    height: auto;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: .3s;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
