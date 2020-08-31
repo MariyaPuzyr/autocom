@@ -1,11 +1,11 @@
 .contacts {
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
   &::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -50%;
+    left: -55%;
     bottom: 0;
     background: #fff;
     -webkit-transform: skew(-45deg);
@@ -38,6 +38,7 @@
       max-width: 350px;
       height: 6px;
       background: #FDD417;
+      margin-top: 7px;
     }
   }
   &-info {
@@ -45,7 +46,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #0A0F1A;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     span {
