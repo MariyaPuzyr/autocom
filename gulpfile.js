@@ -15,6 +15,7 @@ $.path.task.forEach(function (taskPath) {
 $.gulp.task('main-libs', function () {
   return $.gulp.src([
     './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js',
     './node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js',
     // './src/js/jquery-ui.min.js'

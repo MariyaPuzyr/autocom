@@ -37,72 +37,53 @@ section.services
       .col-md-6
         .row
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/maintenance.svg')
               p.service-item__description Технічне обслуговування (ТО)
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/disc-brake.svg')
               p.service-item__description Гальмівна система
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/steering-wheel.svg')
               p.service-item__description Рульове управління
         .row
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/shock-absorber.svg')
               p.service-item__description Підвіска, ходова частина, трансмісія
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/transmission.svg')
               p.service-item__description Трансмісія і зчеплення
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/electrical-service.svg')
               p.service-item__description Електричне обладнання
         .row
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/body-car.svg')
               p.service-item__description Кузов
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/engine.svg')
               p.service-item__description Двигун, паливна система, система випуску
           .col-md-4
-            .services-item
+            .services-item(data-toggle="modal" data-target="#servises")
               .services-item__img
                 img(src='/img/svg/air-conditioning.svg')
               p.service-item__description Кондіціонетр
       .col-md-6
         .services-list-item
           .services-list-item--title Перелік базових робіт з техобслуговування:
-          ul.services-list
-            li Заміна масла і масляного фільтра
-            li Заміна повітряного фільтра
-            li Заміна екологічного фільтра салону
-            li Перевірка рівня рідини гальмівної системи, ГУР, коробки передач
-            li Перевірка гальмівних колодок
-            li Перевірка гальмівних дисків
-            li Перевірка і регулювання стоянкового гальма
-            li Перевірка систем освітлення
-            li Перевірка обігрівача і кондиціонера
-            li Перевірка омивача і склоочисників
-            li Перевірка і регулювання приводних ременів
-            li Огляд і перевірка електрообладнання, електропроводки, звукового сигналу
-            li Перевірка передньої і задньої підвіски
-            li Перевірка рульового управління
-            li Перевірка люфтів і стану ШРУСов
-            li Перевірка і регулювання тиску в шинах
-            li Перевірка колісних гайок
-            li Перевірка роботи і мастило замків, петель
-            li Огляд днища, вихлопної системи, трубопроводів
+          +services-list
