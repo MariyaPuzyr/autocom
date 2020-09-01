@@ -10,11 +10,10 @@ section.sto-form
           form(action='#')
             .row
               .col-md-6
-                .sto-form__item--group
-                  .sto-form__item--car-model.form-control Марка машини
+                .sto-form__item--group.form-group
                   .sto-form__item--dropdown
                     .ui-widget
-                      select#combobox
+                      select.combobox
                         option(value='') Select one...
                         option(value='Renault') Renault
                         option(value='Geely') Geely
@@ -26,14 +25,15 @@ section.sto-form
                         option(value='Chevrolet') Chevrolet
                         option(value='Daewoo') Daewoo
               .col-md-3
-                .input-group
-                  input#datepicker.form-control(type='text' placeholder='Дата')
+                .input-group.form-group
+                  input#datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
                   .input-group-addon
                     +sprite('icon', 'icon-date')
               .col-md-3
-                .md-form.md-outline.input-group-addon.input-with-post-icon.timepicker(twelvehour='true')
-                  input#light-version-examples.form-control(type='text' placeholder='Час')
-                  +sprite('icon', 'icon-timer')
+                .form-group
+                  .md-form.md-outline.input-group-addon.input-with-post-icon.timepicker(twelvehour='true')
+                    input#light-version-examples.form-control(type='text' placeholder='Час')
+                    +sprite('icon', 'icon-timer')
           .row
             .col-md-6
               .form-group

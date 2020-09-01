@@ -108,11 +108,10 @@
                 <form action="#">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="sto-form__item--group">
-                        <div class="sto-form__item--car-model form-control">Марка машини</div>
+                      <div class="sto-form__item--group form-group">
                         <div class="sto-form__item--dropdown">
                           <div class="ui-widget">
-                            <select id="combobox">
+                            <select class="combobox">
                               <option value="">Select one...</option>
                               <option value="Renault">Renault</option>
                               <option value="Geely">Geely</option>
@@ -129,8 +128,8 @@
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="input-group">
-                        <input class="form-control" id="datepicker" type="text" placeholder="Дата">
+                      <div class="input-group form-group">
+                        <input class="form-control" id="datepicker" type="text" placeholder="Дата" autocomplete="off">
                         <div class="input-group-addon">
                           <svg class="icon">
                             <use xlink:href="./img/svg/symbol/sprite.svg#icon-date"></use>
@@ -139,11 +138,13 @@
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="md-form md-outline input-group-addon input-with-post-icon timepicker" twelvehour="true">
-                        <input class="form-control" id="light-version-examples" type="text" placeholder="Час">
-                        <svg class="icon">
-                          <use xlink:href="./img/svg/symbol/sprite.svg#icon-timer"></use>
-                        </svg>
+                      <div class="form-group">
+                        <div class="md-form md-outline input-group-addon input-with-post-icon timepicker" twelvehour="true">
+                          <input class="form-control" id="light-version-examples" type="text" placeholder="Час">
+                          <svg class="icon">
+                            <use xlink:href="./img/svg/symbol/sprite.svg#icon-timer"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -378,11 +379,10 @@
           </div>
           <div class="row">
             <div class="col-md-3">
-              <div class="sto-form__item--group">
-                <div class="sto-form__item--car-model form-control">Марка машини</div>
+              <div class="sto-form__item--group form-group">
                 <div class="sto-form__item--dropdown">
                   <div class="ui-widget">
-                    <select id="combobox">
+                    <select class="combobox">
                       <option value="">Select one...</option>
                       <option value="Renault">Renault</option>
                       <option value="Geely">Geely</option>

@@ -1,0 +1,63 @@
+.custom-combobox {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .ui-button {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 18px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: '';
+      //position: absolute;
+      //right: 15px;
+      //top: 0;
+      width: 18px;
+      height: 48px;
+      mask: url('../img/svg/arrow.svg') no-repeat center;
+      background: #828289;
+      transform: rotate(-90deg);
+      cursor: pointer;
+      //appearance:none;
+    }
+    &:focus, &:active {
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+  }
+}
+.custom-combobox-input {
+  @extend .form-control;
+  background: #ffffff;
+}
+.ui-widget.ui-widget-content {
+  border: 2px solid transparent;
+}
+
+.ui-autocomplete {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 5px 5px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  //max-height: 100px;
+  //overflow: auto;
+  .ui-menu-item-wrapper {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #0A0F1A;
+    border-radius: 5px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 15px;
+    &:hover {
+      background: #FDD417;
+    }
+  }
+}
