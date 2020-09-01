@@ -26,30 +26,30 @@ section.sto-form
                         option(value='Daewoo') Daewoo
               .col-md-3
                 .form-group
-                  input#datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
+                  input.datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
                   +sprite('icon', 'icon-date')
               .col-md-3
                 .form-group.clockpicker
                   input.form-control(type='text' placeholder='Час')
                   +sprite('icon', 'icon-timer')
-          .row
-            .col-md-6
-              .form-group
-                input(type='text' placeholder='VIN код' value='yv2a4b2a0wa280909').form-control
-            .col-md-6
-              .form-group.error
-                input(type='text' value="Ім'я клієнта").form-control
-                .invalid-feedback Помилка
-          .row
-            .col-md-6
-              .form-group
-                input(type='text' placeholder='Держномер').form-control
-            .col-md-6
-              .form-group
-                input(type='phone' placeholder='+380 (__) ___-__-__').form-control
-          .row
-            .col-md-12
-              textarea.form-control(rows='5' placeholder='Опис несправності')
-          .row
-            .col-md-6.m-auto
-              button(type='submit').get-sign-up Записатися
+            .row
+              .col-md-6
+                .form-group
+                  input(type='text' placeholder='VIN код' value='yv2a4b2a0wa280909').form-control
+              .col-md-6
+                .form-group.error
+                  input(type='text' value="Ім'я клієнта").form-control
+                  .invalid-feedback Помилка
+            .row
+              .col-md-6
+                .form-group
+                  input(type='text' placeholder='Держномер').form-control
+              .col-md-6
+                .form-group
+                  input(type='phone' placeholder='+380 (__) ___-__-__').form-control
+            .row
+              .col-md-12
+                textarea.form-control(rows='5' placeholder='Опис несправності')
+            .row
+              .col-md-6.m-auto
+                .get-sign-up(data-toggle="modal" data-target="#get-sto-form") Записатися

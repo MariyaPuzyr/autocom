@@ -177,12 +177,12 @@ $(document).ready(function () {
   $('.single-item').slick();
 
   // $("#datepicker").datepicker($.datepicker.regional["uk"]);
-  $("#datepicker").datepicker({
+  $(".datepicker").datepicker({
     showOtherMonths: true,
     selectOtherMonths: true
   });
   $("#locale").on("change", function () {
-    $("#datepicker").datepicker("option",
+    $(".datepicker").datepicker("option",
         $.datepicker.regional[$(this).val()]);
   });
 

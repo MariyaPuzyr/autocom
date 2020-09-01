@@ -1,0 +1,52 @@
+#get-sto-form.modal.fade(tabindex='-1' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-body
+        h5.modal-title Записатися на сто
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+        form(action='#')
+          .row
+            .col-md-6
+              .sto-form__item--group.form-group
+                .sto-form__item--dropdown
+                  .ui-widget
+                    select.combobox
+                      option(value='') Select one...
+                      option(value='Renault') Renault
+                      option(value='Geely') Geely
+                      option(value='Volkswagen') Volkswagen
+                      option(value='Skoda') Skoda
+                      option(value='Citroen') Citroen
+                      option(value='Audi') Audi
+                      option(value='BMW') BMW
+                      option(value='Chevrolet') Chevrolet
+                      option(value='Daewoo') Daewoo
+            .col-md-3
+              .form-group
+                input.datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
+                +sprite('icon', 'icon-date')
+            .col-md-3
+              .form-group.clockpicker
+                input.form-control(type='text' placeholder='Час')
+                +sprite('icon', 'icon-timer')
+          .row
+            .col-md-6
+              .form-group
+                input(type='text' placeholder='VIN код' value='yv2a4b2a0wa280909').form-control
+            .col-md-6
+              .form-group.error
+                input(type='text' value="Ім'я клієнта").form-control
+                .invalid-feedback Помилка
+          .row
+            .col-md-6
+              .form-group
+                input(type='text' placeholder='Держномер').form-control
+            .col-md-6
+              .form-group
+                input(type='phone' placeholder='+380 (__) ___-__-__').form-control
+          .row
+            .col-md-12
+              textarea.form-control(rows='5' placeholder='Опис несправності')
+          .row
+            .col-md-3
+              button(type='submit').get-sign-up Записатися

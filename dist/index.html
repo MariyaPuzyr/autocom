@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
-                        <input class="form-control" id="datepicker" type="text" placeholder="Дата" autocomplete="off">
+                        <input class="datepicker form-control" type="text" placeholder="Дата" autocomplete="off">
                         <svg class="icon">
                           <use xlink:href="./img/svg/symbol/sprite.svg#icon-date"></use>
                         </svg>
@@ -144,42 +144,42 @@
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="VIN код" value="yv2a4b2a0wa280909">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group error">
+                        <input class="form-control" type="text" value="Ім'я клієнта">
+                        <div class="invalid-feedback">Помилка</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Держномер">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="phone" placeholder="+380 (__) ___-__-__">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <textarea class="form-control" rows="5" placeholder="Опис несправності"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 m-auto">
+                      <div class="get-sign-up" data-toggle="modal" data-target="#get-sto-form">Записатися</div>
+                    </div>
+                  </div>
                 </form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="VIN код" value="yv2a4b2a0wa280909">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group error">
-                      <input class="form-control" type="text" value="Ім'я клієнта">
-                      <div class="invalid-feedback">Помилка</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Держномер">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input class="form-control" type="phone" placeholder="+380 (__) ___-__-__">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <textarea class="form-control" rows="5" placeholder="Опис несправності"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 m-auto">
-                    <button class="get-sign-up" type="submit">Записатися</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -510,6 +510,91 @@
               <li>Прокачування гальмівної системи</li>
             </ul>
             <div class="get-sign-up">Записатись на СТО</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="get-sto-form" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title">Записатися на сто</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="sto-form__item--group form-group">
+                    <div class="sto-form__item--dropdown">
+                      <div class="ui-widget">
+                        <select class="combobox">
+                          <option value="">Select one...</option>
+                          <option value="Renault">Renault</option>
+                          <option value="Geely">Geely</option>
+                          <option value="Volkswagen">Volkswagen</option>
+                          <option value="Skoda">Skoda</option>
+                          <option value="Citroen">Citroen</option>
+                          <option value="Audi">Audi</option>
+                          <option value="BMW">BMW</option>
+                          <option value="Chevrolet">Chevrolet</option>
+                          <option value="Daewoo">Daewoo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <input class="datepicker form-control" type="text" placeholder="Дата" autocomplete="off">
+                    <svg class="icon">
+                      <use xlink:href="./img/svg/symbol/sprite.svg#icon-date"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group clockpicker">
+                    <input class="form-control" type="text" placeholder="Час">
+                    <svg class="icon">
+                      <use xlink:href="./img/svg/symbol/sprite.svg#icon-timer"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="VIN код" value="yv2a4b2a0wa280909">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group error">
+                    <input class="form-control" type="text" value="Ім'я клієнта">
+                    <div class="invalid-feedback">Помилка</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Держномер">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" type="phone" placeholder="+380 (__) ___-__-__">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="5" placeholder="Опис несправності"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <button class="get-sign-up" type="submit">Записатися</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
