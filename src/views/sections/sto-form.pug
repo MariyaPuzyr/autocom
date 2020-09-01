@@ -25,15 +25,13 @@ section.sto-form
                         option(value='Chevrolet') Chevrolet
                         option(value='Daewoo') Daewoo
               .col-md-3
-                .input-group.form-group
-                  input#datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
-                  .input-group-addon
-                    +sprite('icon', 'icon-date')
-              .col-md-3
                 .form-group
-                  .md-form.md-outline.input-group-addon.input-with-post-icon.timepicker(twelvehour='true')
-                    input#light-version-examples.form-control(type='text' placeholder='Час')
-                    +sprite('icon', 'icon-timer')
+                  input#datepicker.form-control(type='text' placeholder='Дата' autocomplete='off')
+                  +sprite('icon', 'icon-date')
+              .col-md-3
+                .form-group.clockpicker
+                  input.form-control(type='text' placeholder='Час')
+                  +sprite('icon', 'icon-timer')
           .row
             .col-md-6
               .form-group

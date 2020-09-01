@@ -1843,4 +1843,10 @@ $(document).ready(function () {
   $("#locale").on("change", function () {
     $("#datepicker").datepicker("option", $.datepicker.regional[$(this).val()]);
   });
+  $('.clockpicker').clockpicker({
+    placement: 'bottom',
+    align: 'right',
+    autoclose: true,
+    donetext: 'Done'
+  });
 });

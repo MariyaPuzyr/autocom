@@ -18,7 +18,8 @@ $.gulp.task('main-libs', function () {
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js',
     './src/js/jquery-ui.min.js',
-    './node_modules/jquery-ui/ui/i18n/datepicker-uk.js'
+    './node_modules/jquery-ui/ui/i18n/datepicker-uk.js',
+    './src/js/jquery-clockpicker.min.js'
   ])
       .pipe(concat('main-libs.min.js'))
       .pipe($.gulp.dest('./dist/js/'))
