@@ -1,0 +1,36 @@
+#add-review.modal.fade(tabindex='-1' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-body
+        h5.modal-title Залишити відгук
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+        form(action='#')
+          .row
+            .col-md-6
+              .form-group
+                input(type='text' placeholder="Ім'я клієнта").form-control
+            .col-md-6
+              .sto-form__item--group.form-group
+                .sto-form__item--dropdown
+                  .ui-widget
+                    select.combobox
+                      option(value='') Select one...
+                      option(value='Renault') Renault
+                      option(value='Geely') Geely
+                      option(value='Volkswagen') Volkswagen
+                      option(value='Skoda') Skoda
+                      option(value='Citroen') Citroen
+                      option(value='Audi') Audi
+                      option(value='BMW') BMW
+                      option(value='Chevrolet') Chevrolet
+                      option(value='Daewoo') Daewoo
+          .row
+            .col-md-12
+              textarea.form-control(rows='5' placeholder='Опис несправності')
+          .row
+            .col-md-4
+              .form-group
+                .g-recaptcha(data-sitekey='6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ')
+          .row
+            .col-md-3
+              button(type='submit').get-sign-up Надіслати
