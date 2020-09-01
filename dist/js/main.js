@@ -1861,23 +1861,13 @@ $(document).ready(function () {
   //
   // });
 
-  $('.single-item').slick();
-  !function (a) {
-    a.fn.datepicker.dates.uk = {
-      days: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"],
-      daysShort: ["Нед", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб"],
-      daysMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
-      months: ["Cічень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
-      monthsShort: ["Січ", "Лют", "Бер", "Кві", "Тра", "Чер", "Лип", "Сер", "Вер", "Жов", "Лис", "Гру"],
-      today: "Сьогодні",
-      clear: "Очистити",
-      format: "dd.mm.yyyy",
-      weekStart: 1
-    };
-  }(jQuery);
-  $('.input-group.date').datepicker({
-    language: "uk",
-    autoclose: true,
-    todayHighlight: true
+  $('.single-item').slick(); // $("#datepicker").datepicker($.datepicker.regional["uk"]);
+
+  $("#datepicker").datepicker({
+    showOtherMonths: true,
+    selectOtherMonths: true
+  });
+  $("#locale").on("change", function () {
+    $("#datepicker").datepicker("option", $.datepicker.regional[$(this).val()]);
   });
 });

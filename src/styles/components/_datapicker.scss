@@ -1,0 +1,93 @@
+.ui-datepicker{
+  box-shadow: 0 2px 6px rgba(17, 26, 36, 0.15);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  padding: 30px 20px;
+  width: 320px;
+  border-radius: 4px;
+  border: none;
+  &-header {
+    width: 100%;
+    display: flex;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    background: transparent;
+  }
+  .ui-datepicker-prev, .ui-datepicker-next {
+    background: #FDD417;
+    border-radius: 3px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: url('../img/svg/arrow.svg');
+    }
+    &:hover {
+      border: none;
+    }
+  }
+  .ui-datepicker-prev {
+    margin-right: auto;
+  }
+  .ui-datepicker-next{
+    order: 2;
+    margin-left: auto;
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+  .ui-icon {
+    display: none;
+  }
+  .ui-datepicker-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0A0F1A;
+    padding-bottom: 20px;
+  }
+  .ui-datepicker-calendar {
+    width: 100%;
+    thead {
+      th {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0A0F1A;
+      }
+    }
+    .ui-state-default {
+      background: #EFEFEF;
+      border-radius: 3px;
+      color: #343435;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 700;
+      height: 36px;
+      border: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #828289;
+        color: #FDD417;
+        border: none;
+        text-decoration: none;
+      }
+    }
+    .ui-state-highlight {
+      background: #FDD417;
+    }
+    .ui-state-active {
+      border: 2px solid #FDD417;
+      background: #ffffff;
+    }
+  }
+}

@@ -11,7 +11,6 @@
   "devDependencies": {
     "@babel/core": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
-    "bootstrap-datepicker": "^1.9.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -45,7 +44,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
     "jquery": "^3.4.1",
-    "jquery-form-styler": "^2.0.2",
+    "jquery-ui": "^1.12.1",
     "newer": "^0.1.5",
     "slick-carousel": "^1.8.1"
   },

@@ -17,9 +17,8 @@ $.gulp.task('main-libs', function () {
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/slick-carousel/slick/slick.min.js',
-    './node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js',
-    // './src/js/jquery-ui.min.js'
-    // './node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+    './src/js/jquery-ui.min.js',
+    './node_modules/jquery-ui/ui/i18n/datepicker-uk.js'
   ])
       .pipe(concat('main-libs.min.js'))
       .pipe($.gulp.dest('./dist/js/'))
